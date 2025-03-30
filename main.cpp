@@ -27,12 +27,12 @@ void printOlderPerson(std::string_view name1, std::string_view name2, int age1, 
     //If person 1 is older than which person 2, print this message
     if (age1 > age2)
     {
-        std::cout << name1 << " (" << age1 << " anos) eres mais velho que " << name2 << " (" << age2 << " anos).\n";
+        std::cout << name1 << " (" << age1 << " anos) é mais velho que " << name2 << " (" << age2 << " anos).\n";
     }
     //If person 2 is older than which person 1, print this message
     else if (age2 > age1)
     {
-        std::cout << name2 << " (" << age2 << " anos) eres mais velho que " << name1 << " (" << age1 << " anos).\n";
+        std::cout << name2 << " (" << age2 << " anos) é mais velho que " << name1 << " (" << age1 << " anos).\n";
     }
     //If person 1 and person 2 have same age, print this message
     else if (age1 == age2)
