@@ -1,6 +1,12 @@
 #include <iostream>
 #include <string>
 #include <string_view>
+#include <limits> // for std::numeric limits
+
+void ignoreLine() // Para ignorar os caracteres menos '\n' no std::cin
+{
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+}
 
 std::string getName(int num)
 {
@@ -22,7 +28,7 @@ int getAge(std::string_view namePerson)
     return age;
 }
 
-void printOlderPerson(std::string_view name1, std::string_view name2, int age1, int age2)
+constexpr void printOlderPerson(std::string_view name1, std::string_view name2, int age1, int age2)
 {
     //If person 1 is older than which person 2, print this message
     if (age1 > age2)
